@@ -1,6 +1,6 @@
 # Mac Development Ansible Playbook
 
-[![Build Status](https://travis-ci.org/geerlingguy/mac-dev-playbook.svg?branch=master)](https://travis-ci.org/geerlingguy/mac-dev-playbook)
+[![Build Status](https://travis-ci.org/jamesobenson/mac-dev-playbook.svg?branch=master)](https://travis-ci.org/jamesobenson/mac-dev-playbook)
 
 This playbook installs and configures most of the software I use on my Mac for web and software development. Some things in macOS are slightly difficult to automate, so I still have some manual installation steps, but at least it's all documented here.
 
@@ -152,14 +152,14 @@ These are mostly direct download links, some are more difficult to install becau
 
 ## Testing the Playbook
 
-Many people have asked me if I often wipe my entire workstation and start from scratch just to test changes to the playbook. Nope! Instead, I posted instructions for how I build a [Mac OS X VirtualBox VM](https://github.com/geerlingguy/mac-osx-virtualbox-vm), on which I can continually run and re-run this playbook to test changes and make sure things work correctly.
+Many people have asked me if I often wipe my entire workstation and start from scratch just to test changes to the playbook. Nope! Instead, Jeff Geerling posted instructions for how  build a [Mac OS X VirtualBox VM](https://github.com/geerlingguy/mac-osx-virtualbox-vm), on which I can continually run and re-run this playbook to test changes and make sure things work correctly.
 
-Additionally, this project is [continuously tested on Travis CI's macOS infrastructure](https://travis-ci.org/geerlingguy/mac-dev-playbook).
+Additionally, this project is [continuously tested on Travis CI's macOS infrastructure](https://travis-ci.org/jamesobenson/mac-dev-playbook).
 
 ## Ansible for DevOps
 
 Check out [Ansible for DevOps](https://www.ansiblefordevops.com/), which teaches you how to automate almost anything with Ansible.
 
 ## Author
-
+James Benson, 2017 (inspired by [Jeff Geerling](http://www.jeffgeerling.com/))
 [Jeff Geerling](http://www.jeffgeerling.com/), 2014 (originally inspired by [MWGriffin/ansible-playbooks](https://github.com/MWGriffin/ansible-playbooks)).
