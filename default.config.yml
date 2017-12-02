@@ -6,7 +6,7 @@ configure_sudoers: yes
 configure_terminal: yes
 configure_osx: yes
 
-dotfiles_repo: https://github.com/geerlingguy/dotfiles.git
+dotfiles_repo: https://github.com/JamesOBenson/dotfiles.git
 dotfiles_repo_accept_hostkey: yes
 dotfiles_repo_local_destination: ~/Dropbox/Development/GitHub/dotfiles
 dotfiles_files:
@@ -18,27 +18,16 @@ dotfiles_files:
 
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
-  - autoconf
   - bash-completion
-  - chromedriver
-  - doxygen
-  - gettext
-  - gifsicle
   - git
   - go
-  - gpg
   - hub
   - httpie
   - iperf
-  - libevent
-  - sqlite
-  - mcrypt
+  - monit
   - nmap
-  - node
-  - nvm
   - ssh-copy-id
   - cowsay
-  - readline
   - openssl
   - pv
   - wget
@@ -47,26 +36,39 @@ homebrew_installed_packages:
 homebrew_taps:
   - homebrew/core
   - caskroom/cask
-  - homebrew/php
-
+ 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
+  - cheatsheet
+  - coconutbattery
   - docker
   - dropbox
   # - fing # Download link keeps getting changed, d'oh!
+  - filezilla
   - firefox
   - google-chrome
+  - google-hangouts
+  - google-backup-and-sync
   - handbrake
-  - licecap
+  - inkscape
+  - itsycal
+  - keepassx
+  - keka
   - limechat
   - macvim
-  - sequel-pro
-  - skitch
-  - slack
+  - megasync
+  - onedrive
+  # - slack
   - sublime-text
-  - transmit
+  # - transmit
+  - teamviewer
+  - textmate
+  - tigervpn
+  - transmission
+  - unetbootin
   - vagrant
   - virtualbox
+  - vlc
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps: []
