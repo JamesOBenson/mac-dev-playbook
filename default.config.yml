@@ -39,6 +39,7 @@ homebrew_taps:
  
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
+  - xquartz
   - cheatsheet
   - coconutbattery
   - docker
@@ -51,6 +52,7 @@ homebrew_cask_apps:
   - google-backup-and-sync
   - handbrake
   - inkscape
+  - iterm2
   - itsycal
   - keepassx
   - keka
@@ -58,16 +60,15 @@ homebrew_cask_apps:
   - macvim
   - megasync
   - onedrive
-  # - slack
   - sublime-text
-  # - transmit
   - teamviewer
   - textmate
   - tigervpn
   - transmission
   - unetbootin
-  - vagrant
+  # - vagrant # SHA key may not be valid!
   - virtualbox
+  - virtualbox-extension-pack
   - vlc
 
 # See `geerlingguy.mas` role documentation for usage instructions.
