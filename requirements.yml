@@ -1,4 +1,4 @@
 ---
-- name: jamesobenson.dotfiles
-- name: jamesobenson.homebrew
-#- name: jamesobenson.mas
+- name: JamesOBenson.dotfiles
+- name: JamesOBenson.homebrew
+#- name: JamesOBenson.mas
