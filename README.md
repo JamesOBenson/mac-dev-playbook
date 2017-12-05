@@ -67,47 +67,50 @@ Any variable can be overridden in `config.yml`; see the supporting roles' docume
 
 Applications (installed with Homebrew Cask):
 
+  - [XQuartz](https://www.xquartz.org)
+  - [cheatsheet] (https://www.mediaatelier.com/CheatSheet/)
+  - [coconutbattery] (www.coconut-flavour.com)
   - [Docker](https://www.docker.com/)
   - [Dropbox](https://www.dropbox.com/)
+  - [filezilla] (https://filezilla-project.org/)
   - [Firefox](https://www.mozilla.org/en-US/firefox/new/)
   - [Google Chrome](https://www.google.com/chrome/)
+  - [Google Hangouts] (https://hangouts.google.com/)
+  - [google-backup-and-sync] (https://www.google.com/drive/download/backup-and-sync/)
   - [Handbrake](https://handbrake.fr/)
   - [Homebrew](http://brew.sh/)
-  - [LICEcap](http://www.cockos.com/licecap/)
+  - [inkscape] (https://inkscape.org/)
+  - [iterm2] (https://www.iterm2.com/)
+  - [itsycal] (https://www.mowglii.com/itsycal/)
+  - [keepassx] (https://www.keepassx.org/)
+  - [keka] (www.kekaosx.com/)
   - [LimeChat](http://limechat.net/mac/)
   - [MacVim](http://macvim-dev.github.io/macvim/)
-  - [nvALT](http://brettterpstra.com/projects/nvalt/)
-  - [Sequel Pro](https://www.sequelpro.com/) (MySQL client)
-  - [Skitch](https://evernote.com/skitch/)
-  - [Slack](https://slack.com/)
+  - [megasync] (https://megasync.en.softonic.com)
+  - [onedrive] (https://onedrive.live.com/about/en-us/)
   - [Sublime Text](https://www.sublimetext.com/)
-  - [Transmit](https://panic.com/transmit/) (S/FTP client)
+  - [teamviewer] (https://www.teamviewer.us/)
+  - [textmate] (https://github.com/textmate)
+  - [tigervpn] (https://www.tigervpn.com/)
+  - [transmission] (https://transmissionbt.com/)
+  - [unetbootin] (https://unetbootin.github.io/)
   - [Vagrant](https://www.vagrantup.com/)
   - [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
+  - [virtualbox-extension-pack] (https://www.virtualbox.org/wiki/Downloads)
+  - [vlc] (https://www.videolan.org/vlc/index.html)
 
 Packages (installed with Homebrew):
 
-  - autoconf
   - bash-completion
-  - chromedriver
-  - doxygen
-  - gettext
-  - gifsicle
   - git
   - go
-  - gpg
   - hub
   - httpie
   - iperf
-  - libevent
-  - sqlite
-  - mcrypt
+  - monit
   - nmap
-  - node
-  - nvm
   - ssh-copy-id
   - cowsay
-  - readline
   - openssl
   - pv
   - wget
@@ -123,32 +126,19 @@ Finally, there are a few other preferences and settings added on for various app
 
 It's my hope that I can get the rest of these things wrapped up into Ansible playbooks soon, but for now, these steps need to be completed manually (assuming you already have Xcode and Ansible installed, and have run this playbook).
 
-  1. Set JJG-Term as the default Terminal theme (it's installed, but not set as default automatically).
-  2. Install [Sublime Package Manager](http://sublime.wbond.net/installation).
-  3. Install all the apps that aren't yet in this setup (see below).
-  4. Remap Caps Lock to Escape (requires macOS Sierra 10.12.1+).
-  5. Set trackpad tracking rate.
-  6. Set mouse tracking rate.
-  7. Configure extra Mail and/or Calendar accounts (e.g. Google, Exchange, etc.).
+  1. Install [Sublime Package Manager](http://sublime.wbond.net/installation).
+  2. Install all the apps that aren't yet in this setup (see below).
+  3. Remap Caps Lock to Escape (requires macOS Sierra 10.12.1+).
+  4. Set trackpad tracking rate.
+  5. Set mouse tracking rate.
+  6. Configure extra Mail and/or Calendar accounts (e.g. Google, Exchange, etc.).
 
 ### Applications/packages to be added:
 
 These are mostly direct download links, some are more difficult to install because of custom installers or other nonstandard install quirks:
 
-  - [iShowU HD](http://www.shinywhitebox.com/downloads/iShowU_HD_2.3.20.dmg)
-  - [Adobe Creative Cloud](http://www.adobe.com/creativecloud.html)
-
-### Configuration to be added:
-
-  - I have vim configuration in the repo, but I still need to add the actual installation:
-    ```
-    mkdir -p ~/.vim/autoload
-    mkdir -p ~/.vim/bundle
-    cd ~/.vim/autoload
-    curl https://raw.githubusercontent.com/tpope/vim-pathogen/master/autoload/pathogen.vim > pathogen.vim
-    cd ~/.vim/bundle
-    git clone git://github.com/scrooloose/nerdtree.git
-    ```
+  - Microsoft Office Suite
+  - OneNote
 
 ## Testing the Playbook
 
