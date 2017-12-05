@@ -1,6 +1,6 @@
 # Mac Development Ansible Playbook
 
-[![Build Status](https://travis-ci.org/jamesobenson/mac-dev-playbook.svg?branch=master)](https://travis-ci.org/jamesobenson/mac-dev-playbook)
+[![Build Status](https://travis-ci.org/JamesOBenson/mac-dev-playbook.svg?branch=master)](https://travis-ci.org/JamesOBenson/mac-dev-playbook)
 
 This playbook installs and configures most of the software I use on my Mac for web and software development. Some things in macOS are slightly difficult to automate, so I still have some manual installation steps, but at least it's all documented here.
 
@@ -113,7 +113,7 @@ Packages (installed with Homebrew):
   - wget
   - wrk
 
-My [dotfiles](https://github.com/geerlingguy/dotfiles) are also installed into the current user's home directory, including the `.osx` dotfile for configuring many aspects of macOS for better performance and ease of use. You can disable dotfiles management by setting `configure_dotfiles: no` in your configuration.
+My [dotfiles](https://github.com/JamesOBenson/dotfiles) are also installed into the current user's home directory, including the `.osx` dotfile for configuring many aspects of macOS for better performance and ease of use. You can disable dotfiles management by setting `configure_dotfiles: no` in your configuration.
 
 Finally, there are a few other preferences and settings added on for various apps and services.
 
@@ -154,7 +154,7 @@ These are mostly direct download links, some are more difficult to install becau
 
 Many people have asked me if I often wipe my entire workstation and start from scratch just to test changes to the playbook. Nope! Instead, Jeff Geerling posted instructions for how  build a [Mac OS X VirtualBox VM](https://github.com/geerlingguy/mac-osx-virtualbox-vm), on which I can continually run and re-run this playbook to test changes and make sure things work correctly.
 
-Additionally, this project is [continuously tested on Travis CI's macOS infrastructure](https://travis-ci.org/jamesobenson/mac-dev-playbook).
+Additionally, this project is [continuously tested on Travis CI's macOS infrastructure](https://travis-ci.org/JamesOBenson/mac-dev-playbook).
 
 ## Ansible for DevOps
 
